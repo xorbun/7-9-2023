@@ -86,7 +86,7 @@ const truth= function boundary(n1)
                     return boh;
                 }
             }
-const k=truth(40);
+const k=truth(401);
 console.log(k);
 
 /* ESERCIZIO 5
@@ -137,7 +137,7 @@ function check3and7(n1)
     }
 }
 const a=check3and7(30);
-console.log(a);
+
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
@@ -161,6 +161,21 @@ console.log(b);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const upperFirst= function(str)
+{
+    const array=str.split(" ");
+    let result="";
+    for(let i=0; i<array.length;i++)
+    {
+        result+=array[i].slice(0,1).toUpperCase()+array[i].slice(1)+ " ";
+    }
+    
+    return result;
+}
+const f= upperFirst("buongiorno a tutti");
+console.log(f);
+
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
