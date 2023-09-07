@@ -101,10 +101,10 @@ console.log(k);
 function epify(text)
 {
     const position=text.indexOf("epicode",0);
-    console.log(position);
+    
     if (position!==0)
     {
-        const nuova= "epicode " + text;
+        const nuova= "EPICODE " + text;
         return nuova;
     }
     else
@@ -137,6 +137,7 @@ function check3and7(n1)
     }
 }
 const a=check3and7(30);
+console.log(a);
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
