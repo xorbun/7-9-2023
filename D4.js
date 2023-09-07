@@ -191,7 +191,7 @@ function giveMeRandom(num4)
     const vett2=[];
     for(let i=0;i<num4;i++)
     {
-        vett2[i]=Math.floor(Math.random()*10+1);
+        vett2[i]=Math.floor(Math.random()*11);
         
     }
     return vett2;
